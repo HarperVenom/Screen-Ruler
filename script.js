@@ -21,7 +21,7 @@ function drawLines() {
    
     const width = window.innerWidth;
     if (width > 1000){
-        createLines(400,200,100,10);
+        createLines(400,200,100,20);
     } else if (width > 500) {
         createLines(200,100,10);
     } else {
