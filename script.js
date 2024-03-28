@@ -21,14 +21,14 @@ function drawLines() {
    
     const width = window.innerWidth;
     if (width > 1000){
-        createLines(300,100,25);
+        createLines(400,200,100,10);
     } else if (width > 500) {
-        createLines(200,100,20);
+        createLines(200,100,10);
     } else {
-        createLines(50,10);
+        createLines(100,10);
     }
 
-    //Creates two lines of strokes. Each argument is a measure point
+    //Creates two lines of strokes. Each argument is a measurement point. First argument is marked with the number
     function createLines(...args) {
         //last argument is the distance between each mark
         let space = args[args.length-1];
