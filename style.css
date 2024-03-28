@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ruler {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 200, 49);
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0 0 10px 1px black;
+}
+.ruler-measure {
+    text-align: center;
+    margin: 1em;
+}
+.ruler-top, .ruler-bot {
+    display: flex;
+    align-items: start;
+}
+.ruler-bot {
+    align-items: end;
+}
+.stroke {
+    border-left: 2px inset rgb(0, 0, 0);
+    
+    height: 10px;
+    box-sizing: border-box;
+}
+.mark {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+.ruler-top .mark {
+    transform: translate(-50%, 25px);
+}
+.ruler-bot .mark {
+    transform: translate(-50%, -100%);
+}
